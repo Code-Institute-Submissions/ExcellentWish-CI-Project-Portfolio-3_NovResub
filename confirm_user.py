@@ -2,6 +2,9 @@ user = input("Type in your name and press return:\n ")
 available = float(input("Type in the amount of money you have and press return: \n"))
 print(f"Your name is {user} and the amount you have is {available}")
 confirm_user = input("Is this correct? Please type y or n:0 \n")
+"""
+This will validate the users input 
+"""
         
 if confirm_user != "y": 
     while (confirm_user == "n", confirm_user != "y" and confirm_user != "n"):
