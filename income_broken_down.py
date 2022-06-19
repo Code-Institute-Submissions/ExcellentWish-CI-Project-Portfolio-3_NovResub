@@ -1,4 +1,5 @@
 week_income = float(input("What is your weekly income: "))
+fortnight_income = 0
 month_income = 0
 year_income = 0
 """ 
@@ -6,7 +7,13 @@ This will calculate the income of the user from there weekly to monthly to yearl
 This will help with what there budgets.
 48 weeks in a working year in Ireland to count for holidays
 """
+def week_income_to_fortnight(week_income):
+    global fortnight_income
+    fortnight_income = week_income * 2
+    print(f"You fortnight income is {fortnight_income} and weekly is {week_income}")
+    return fortnight_income
 
+week_income_to_fortnight(week_income)
 
 def week_income_to_monthly(week_income):
     global month_income
