@@ -33,9 +33,10 @@ def print_summary():
         budgeted = budgets[name]
         spent = expenditure[name]
         remaining = budgeted - spent
-        left_from_spent = remaining + available
-        print(name, budgeted , spent, remaining, left_from_spent)
+        left_from_income = remaining + available
+        print(name, budgeted , spent, remaining, left_from_income)
     
+
 
 add_budget("food", 100)
 spend("food",90)
