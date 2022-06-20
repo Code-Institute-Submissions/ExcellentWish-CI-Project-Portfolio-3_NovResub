@@ -11,5 +11,14 @@ def interest():
     time = float(input('Enter the time in years: '))
     Simple = (principal * rate * time/ 100.00)     #interest formula
     print(f"Simple Interest value over the years. = {Simple}")
-    print(Simple + principal)
+    total_amount_invested = Simple + principal
+    print(f"Total amount = {total_amount_invested}")
+    year = 0
+    new_simple = total_amount_invested * rate /100
+    while total_amount_invested <= 10000:
+        total_amount_invested += new_simple 
+        
+        year = year + 1
+        
+        print(f"{total_amount_invested } year{year}")
 interest()
