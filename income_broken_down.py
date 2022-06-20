@@ -5,7 +5,7 @@ year_income = 0
 """ 
 This will calculate the income of the user from there weekly to monthly to yearly income
 This will help with what there budgets.
-48 weeks in a working year in Ireland to count for holidays
+48 weeks in a working year in Ireland to count for holidays and to equal 12 months pay
 """
 def week_income_to_fortnight(week_income):
     global fortnight_income
