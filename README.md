@@ -1,6 +1,18 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Project Portfolio 3- Python Essentials - Code Institute.
+### Site Overview
 
-Welcome Nigel Doheny,
+The project will cover creating a budget manager.
+Its aim is to add a user, let them enter there income either by week, month or year. I will break down there income by week, month or year.
+After the user should be able to enter there budget,for this we will ask them to enter there budget name and the amount by month and we will work out there weekly and yearly costs. How much they want to spend and what they actually spent, and add it back to there income or minus it from that income.
+Then we can ask the user if they want to invest the remaining amount or a percentage of the remaining amount.
+For the investment we will also explain how long that invested amount will take to become 1,000,000 with interest from the initial investment.
+
+
+
+
+
+
+Welcome 
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
