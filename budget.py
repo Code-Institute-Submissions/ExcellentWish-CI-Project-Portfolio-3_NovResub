@@ -13,9 +13,9 @@ def add_budget(name , amount):
     budgets[name] = amount
     available -= amount
     expenditure[name] = 0
-    return print(budgets,available)
+    return print(budgets, available)
 
-def spend(name,amount):
+def spend(name, amount):
     """
     Notes the amount of money you spent and the name of the budget you want to keep track it against
     """
@@ -34,7 +34,7 @@ def print_summary():
         spent = expenditure[name]
         remaining = budgeted - spent
         left_from_income = remaining + available
-        print(name, budgeted , spent, remaining, left_from_income)
+        print(name, budgeted, spent, remaining, left_from_income)
     
 
 
