@@ -1,10 +1,11 @@
-from prettytable import PrettyTable
-from confirm_user import confirm_user_for_project
+import confirm_user
+import income_broken_down
+import budget
 
 def main():
-    my_table = PrettyTable()  
-    print(my_table)
-
+    confirm_user
+    income_broken_down
+    budget
 
 
 main()

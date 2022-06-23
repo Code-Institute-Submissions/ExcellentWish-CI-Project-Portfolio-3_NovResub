@@ -1,4 +1,6 @@
-week_income = float(input("What is your weekly income: "))
+from confirm_user import available
+
+week_income = available
 fortnight_income = 0
 month_income = 0
 year_income = 0
@@ -10,7 +12,7 @@ This will help with what there budgets.
 def week_income_to_fortnight(week_income):
     global fortnight_income
     fortnight_income = week_income * 2
-    print(f"You fortnight income is {fortnight_income} and weekly is {week_income}")
+    print(f"Your fortnight income is {fortnight_income} and weekly is {week_income}")
     return fortnight_income
 
 week_income_to_fortnight(week_income)
