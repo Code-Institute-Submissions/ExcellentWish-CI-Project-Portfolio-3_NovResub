@@ -33,6 +33,7 @@ def print_summary():
         budgeted = budgets[name]
         spent = expenditure[name]
         remaining = budgeted - spent
+        global left_from_income
         left_from_income = remaining + available
         print(name, budgeted, spent, remaining, left_from_income)
     
