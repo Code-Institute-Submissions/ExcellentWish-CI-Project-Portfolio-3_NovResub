@@ -3,7 +3,7 @@ from colorama import Fore
 init()
 
 user = input("Type in your name and press return:\n ")
-available = float(input("What is your weekly income: "))
+available = float(input(Fore.GREEN + "What is your weekly income: "))
 print(Fore.BLUE + f"Your name is {user} and the amount you have is {available}" + Fore.WHITE)
 confirm_user = input("Is this correct? Please type y or n:0 \n")
 """
