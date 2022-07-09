@@ -42,6 +42,7 @@ def spend(name, amount):
     spent = expenditure[name]
     
     remaining_from_budget = budgeted - spent
+    print(expenditure)
     return print(f"{remaining_from_budget} remaining from budget")    
 
 def print_summary():
@@ -50,16 +51,19 @@ def print_summary():
         spent = expenditure[name]
         remaining = budgeted - spent
         global left_from_income
-        left_from_income = remaining + available
+        left_from_income = available 
 
         # use pretty tables for print summary
         x = PrettyTable()
+        y = PrettyTable()
         x.field_names = ["Budget Name", "Budgeted Amount", "Spent", "Remainder from Budget", "Left from Income"]
         x.add_row([name, budgeted, spent, remaining, left_from_income])
+        y.field_names = ["Left from Income"]
+        y.add_row([left_from_income])
         print(x)
-        # print('This is your budget summary:')
-        # print('Name | Budgeted | Spent | Remaining | Left From Income')
-        # print(name, budgeted, spent, remaining, left_from_income)
+    # print('This is your budget summary:')
+    # print('Name | Budgeted | Spent | Remaining | Left From Income')
+    # print(name, budgeted, spent, remaining, left_from_income)
     
 print(Fore.WHITE)
 userInputBudget()

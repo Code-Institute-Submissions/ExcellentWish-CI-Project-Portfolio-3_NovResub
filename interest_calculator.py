@@ -14,6 +14,8 @@ print("Recommended 20% of your income for savings and investing.")
 print("I will take 10% of your remaining income after your your budgeted")
 
 ten_percent_of_income = (10/100) * left_from_income # get a % of income
+year_amount_from_income = ten_percent_of_income * 48 # The year amount of the 10%
+print(year_amount_from_income)
 print(ten_percent_of_income)
 
 def interest():      
@@ -44,5 +46,5 @@ def interest():
         year = year + 1
         
         print(f"After {str(time)} years your money will be {total_amount_invested } in the year{year}")"""
-        
+
 interest()
