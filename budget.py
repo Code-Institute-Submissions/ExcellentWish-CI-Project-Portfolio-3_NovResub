@@ -57,7 +57,6 @@ def print_summary():
         # print('Name | Budgeted | Spent | Remaining | Left From Income')
         # print(name, budgeted, spent, remaining, left_from_income)
     
-
 print(Fore.WHITE)
 userInputBudget()
 print(Fore.CYAN)
