@@ -27,4 +27,4 @@ if confirm_user != "y":
         if confirm_user == "y":
             break
 
-print(Fore.BLUE + f"End of user confirmation user:{user} money:{available}" + Fore.WHITE)
+print(Fore.BLUE + f"End of user confirmation user: {user} money: {available}\n" + Fore.WHITE)

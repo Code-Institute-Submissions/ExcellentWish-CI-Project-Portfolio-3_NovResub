@@ -1,4 +1,6 @@
 from confirm_user import available
+from prettytable import PrettyTable
+from colorama import Fore
 
 week_income = available
 fortnight_income = 0
@@ -60,3 +62,12 @@ def year_income_to_week(year_income):
     return
 
 year_income_to_week(year_income)
+
+def summary():
+    x = PrettyTable()
+    x.field_names = ["Week", "Fortnight", "Month", "Year"]
+    x.add_row([week_income, fortnight_income, month_income, year_income])
+    print(x)
+
+print(Fore.CYAN)
+summary()
