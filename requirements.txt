@@ -1,1 +1,2 @@
--e git://github.com/jazzband/prettytable.git#egg=prettytable
+colorama==0.4.5
+prettytable @ git+https://github.com/jazzband/prettytable@27017efd66060aaee57913bf209278b7d496f19b
