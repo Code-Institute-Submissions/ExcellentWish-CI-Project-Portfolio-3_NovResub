@@ -1,1 +1,1 @@
-# Your requirements go here
+-e git://github.com/jazzband/prettytable.git#egg=prettytable
