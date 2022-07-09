@@ -10,11 +10,15 @@ expenditure = {}
 
 def userInputBudget():
     print(Fore.WHITE)
-    budgetname = str(input('Enter the budget name: '))
-    budgetAmount = float(input('Enter the amount you have set aside for the budget: '))
-    spendings = float(input('Enter the amount you have spent: '))
-    add_budget(budgetname, budgetAmount)
-    spend(budgetname, spendings)
+    budget_num = float(input("Enter the number of budgets you want to record:"))
+    while budget_num > 0:
+        budget_num -= 1
+        budgetname = str(input('Enter the budget name: '))
+        budgetAmount = float(input('Enter the amount you have set aside for the budget: '))
+        spendings = float(input('Enter the amount you have spent: '))
+        add_budget(budgetname, budgetAmount)
+        spend(budgetname, spendings)
+    
 
 def add_budget(name , amount):
     global available
