@@ -1,2 +1,3 @@
+art==5.7
 colorama==0.4.5
-prettytable @ git+https://github.com/jazzband/prettytable@27017efd66060aaee57913bf209278b7d496f19b
+prettytable==3.3.0

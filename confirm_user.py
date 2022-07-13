@@ -2,6 +2,7 @@ from colorama import init
 from colorama import Fore
 init()
 
+
 user = input("Type in your name and press return:\n ")
 available = float(input(Fore.GREEN + "What is your weekly income: "))
 print(Fore.BLUE + f"Your name is {user} and the amount you have is {available}" + Fore.WHITE)
