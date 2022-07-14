@@ -1,6 +1,7 @@
 from colorama import init
 from colorama import Fore
 init()
+from prettytable import PrettyTable
 
 
 def heading():
@@ -18,6 +19,13 @@ def heading():
     ██      ██   ██ ██      ██      ██    ██ ██      ██   ██    ██    ██    ██ ██   ██ 
      ██████ ██   ██ ███████  ██████  ██████  ███████ ██   ██    ██     ██████  ██   ██ 
 ''')
+    
+    x = PrettyTable()
+    x.field_names = ["Budget Calculator"]
+    x.add_row(["This will calculate your Income"])
+    x.add_row(["This will also create your budgets"])
+    x.add_row(["And also show you how much you can invest to become a millionaire"])
+    print(x)
 
 heading()
 

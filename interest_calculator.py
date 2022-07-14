@@ -15,8 +15,10 @@ print("I will take 10% of your remaining income after your your budgeted")
 
 ten_percent_of_income = (10/100) * left_from_income # get a % of income
 year_amount_from_income = ten_percent_of_income * 48 # The year amount of the 10%
-print(year_amount_from_income)
-print(ten_percent_of_income)
+
+print(ten_percent_of_income + "is equal to 10% of your income ")
+print(year_amount_from_income + "is equal to the annual amount of that 10%")
+
 
 def interest():      
     # the amount of money initially invested
