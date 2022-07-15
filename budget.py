@@ -61,9 +61,6 @@ def print_summary():
         y.field_names = ["Left from Income"]
         y.add_row([left_from_income])
         print(x)
-    # print('This is your budget summary:')
-    # print('Name | Budgeted | Spent | Remaining | Left From Income')
-    # print(name, budgeted, spent, remaining, left_from_income)
     
 print(Fore.WHITE)
 userInputBudget()

@@ -1,5 +1,6 @@
 ## Project Portfolio 3- Python Essentials - Code Institute.
-### Site Overview
+
+## Budget App
 
 The project will cover creating a budget manager.
 Its aim is to add a user, let them enter there income either by week, month or year. I will break down there income by week, month or year.
@@ -7,6 +8,15 @@ After the user should be able to enter there budget,for this we will ask them to
 Then we can ask the user if they want to invest the remaining amount or a percentage of the remaining amount.
 For the investment we will also explain how long that invested amount will take to become 1,000,000 with interest from the initial investment.
 
+# Table of Contents
++ [Site Overview](#site-overview)
++ [Planning stage](#planning-stage)
++ [What's on the table?](#what's-on-the-table?)
++ [The Games](#the-games)
++ [Tech used](#tech-used)
++ [Testing](#testing)
++ [Deployment](#deployment)
++ [Credits](#credits)
 
 
 
