@@ -30,10 +30,6 @@ def interest():
     Simple = (principal * rate * time/ 100.00)     # interest formula
     print(Fore.MAGENTA)
     print(f"Simple Interest value over the years. = {Simple}")
-    # total_amount_invested = Simple + principal
-    # print(f"Total amount = {total_amount_invested}")
-    
-    # total years 
     total_amount_invested = 1000000 # set to 1 million
     year = (total_amount_invested) / (principal * rate / 100)
 
@@ -43,10 +39,5 @@ def interest():
 
     print(f"After {year} years your money will be {total_amount_invested } in approximately the year {date_year}")
     
-    """ while total_amount_invested <= 10000:
-        total_amount_invested += new_simple       
-        year = year + 1
-        
-        print(f"After {str(time)} years your money will be {total_amount_invested } in the year{year}")"""
 
 interest()
