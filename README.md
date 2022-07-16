@@ -10,9 +10,8 @@ For the investment we will also explain how long that invested amount will take 
 
 # Table of Contents
 + [Project Overview](#Budget-App)
-+ [User Stories](#User-Experience)
++ [User Experience](#User-Experience)
 + [What's on the table?](#what's-on-the-table?)
-+ [The Games](#the-games)
 + [Tech used](#tech-used)
 + [Testing](#testing)
 + [Deployment](#deployment)
@@ -25,6 +24,19 @@ For the investment we will also explain how long that invested amount will take 
 * I want to be able to create budgets and find out what the spendings are
 * I want to be able to display the information as it helps users to see rather then have it in the back ground
 * After I want to help get the idea to invest by using simple interest.
+*  I want it to be a simple app for a User
+  
+## Site Aims:
+* I wanted to learn Python and show my logic with a budget, app as we are experiencing higher inflation in Europe.
+* I want to show the importance of saving and budgeting
+* I want to show the importance of investing 
+
+## How Is This Will Be Achieved:
+* By using Github, Python and heroku.
+
+## Flowchart
+![Flowchart](assets/images/python%20flow%20chart.png)
+
 
 
 ## Credits

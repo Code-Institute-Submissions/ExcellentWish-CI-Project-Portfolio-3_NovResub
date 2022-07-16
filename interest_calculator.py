@@ -74,6 +74,7 @@ def interest():
     
     print(Fore.MAGENTA)
     print(f"Simple Interest value over the years. = {Simple}")
+    
     total_amount_invested = 1000000 # set to 1 million
     year = (total_amount_invested) / (principal * rate / 100)
 
