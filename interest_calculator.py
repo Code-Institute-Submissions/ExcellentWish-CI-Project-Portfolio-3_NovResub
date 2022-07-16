@@ -10,7 +10,7 @@ Calculate interest from investing. Average etf and MTF are 8% a year.
 We take an amount the user wants to invest and add 8% until 
 they make a million and tell them how long it takes 
 """
-print("Recommended 20% of your income for savings and investing.")
+print(Fore.GREEN + "Recommended 20% of your income for savings and investing.")
 print("I will take 10% of your remaining income after your your budgeted")
 
 ten_percent_of_income = (10/100) * left_from_income # get a % of income

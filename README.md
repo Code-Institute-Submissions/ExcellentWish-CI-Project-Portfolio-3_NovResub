@@ -9,8 +9,8 @@ Then we can ask the user if they want to invest the remaining amount or a percen
 For the investment we will also explain how long that invested amount will take to become 1,000,000 with interest from the initial investment.
 
 # Table of Contents
-+ [Site Overview](#site-overview)
-+ [Planning stage](#planning-stage)
++ [Project Overview](#Budget-App)
++ [User Stories](#User-Experience)
 + [What's on the table?](#what's-on-the-table?)
 + [The Games](#the-games)
 + [Tech used](#tech-used)
@@ -18,8 +18,13 @@ For the investment we will also explain how long that invested amount will take 
 + [Deployment](#deployment)
 + [Credits](#credits)
 
+## User Experience
 
-
+* As a user I want to be able to find out my income through out the year
+* I want the user to know there fortnight, monthly and yearly incomes
+* I want to be able to create budgets and find out what the spendings are
+* I want to be able to display the information as it helps users to see rather then have it in the back ground
+* After I want to help get the idea to invest by using simple interest.
 
 
 Welcome 
