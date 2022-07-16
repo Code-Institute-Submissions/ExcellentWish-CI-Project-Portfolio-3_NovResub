@@ -27,6 +27,9 @@ For the investment we will also explain how long that invested amount will take 
 * After I want to help get the idea to invest by using simple interest.
 
 
+## Credits
+https://www.myloancare.in/fixed-deposit/simple-interest-formula/#:~:text=The%20formula%20for%20calculating%20Principal,and%20T%20is%20Time%20Period for interest calculator
+
 Welcome 
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**

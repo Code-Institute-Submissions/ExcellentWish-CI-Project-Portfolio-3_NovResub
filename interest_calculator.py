@@ -1,9 +1,22 @@
 from math import ceil
 from budget import left_from_income
+from prettytable import PrettyTable
 from datetime import date
 from colorama import init
 from colorama import Fore
 init()
+
+def interest_heading():
+    #Heading for app  
+    print(FORE.WHITE)
+    x = PrettyTable()
+    x.field_names = ["Your Interest Calculator"]
+    x.add_row(["This will calculate 10% of your income"])
+    x.add_row(["It will then multiply it into a year amount"])
+    x.add_row(["And also show you how much you can invest to become a millionaire"])
+    print(x)
+
+interest_heading()
 
 """
 Calculate interest from investing. Average etf and MTF are 8% a year.
@@ -16,8 +29,8 @@ print("I will take 10% of your remaining income after your your budgeted")
 ten_percent_of_income = (10/100) * left_from_income # get a % of income
 year_amount_from_income = ten_percent_of_income * 48 # The year amount of the 10%
 
-print(ten_percent_of_income + "is equal to 10% of your income ")
-print(year_amount_from_income + "is equal to the annual amount of that 10%")
+print(f"10% of your income is = {ten_percent_of_income} ")
+print(f"{year_amount_from_income} is equal to the annual amount of that 10%")
 
 
 def interest():      
