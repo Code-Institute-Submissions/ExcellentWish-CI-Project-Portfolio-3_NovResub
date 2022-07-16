@@ -12,6 +12,7 @@ This will help with what there budgets.
 48 weeks in a working year in Ireland to count for holidays and to equal 12 months pay
 """
 def week_income_to_fortnight(week_income):  #Gets the weekly income to your income every 2 weeks
+    global fortnight_income
     fortnight_income = week_income * 2
     return fortnight_income
 
