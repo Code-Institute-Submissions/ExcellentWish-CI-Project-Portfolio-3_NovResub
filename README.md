@@ -9,13 +9,18 @@ Then we can ask the user if they want to invest the remaining amount or a percen
 For the investment we will also explain how long that invested amount will take to become 1,000,000 with interest from the initial investment.
 
 # Table of Contents
-+ [Project Overview](#Budget-App)
-+ [User Experience](#User-Experience)
-+ [What's on the table?](#what's-on-the-table?)
-+ [Tech used](#tech-used)
-+ [Testing](#testing)
-+ [Deployment](#deployment)
-+ [Credits](#credits)
+- [Table of Contents](#table-of-contents)
+  - [User Experience](#user-experience)
+  - [Site Aims:](#site-aims)
+  - [How Is This Will Be Achieved:](#how-is-this-will-be-achieved)
+  - [Flowchart](#flowchart)
+  - [Tech used](#tech-used)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+  - [Reminders](#reminders)
+  - [Creating the Heroku app](#creating-the-heroku-app)
+  - [Constraints](#constraints)
 
 ## User Experience
 
@@ -38,6 +43,12 @@ For the investment we will also explain how long that invested amount will take 
 ![Flowchart](assets/images/python%20flow%20chart.png)
 
 
+## Tech used
+
+## Testing
+
+
+## Deployment
 
 ## Credits
 https://www.myloancare.in/fixed-deposit/simple-interest-formula/#:~:text=The%20formula%20for%20calculating%20Principal,and%20T%20is%20Time%20Period for interest calculator
