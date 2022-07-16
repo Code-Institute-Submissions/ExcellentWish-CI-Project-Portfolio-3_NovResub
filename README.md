@@ -1,4 +1,4 @@
-## Project Portfolio 3- Python Essentials - Code Institute.
+# Project Portfolio 3- Python Essentials - Code Institute.
 
 ## Budget App
 
@@ -9,6 +9,8 @@ Then we can ask the user if they want to invest the remaining amount or a percen
 For the investment we will also explain how long that invested amount will take to become 1,000,000 with interest from the initial investment.
 
 # Table of Contents
+- [Project Portfolio 3- Python Essentials - Code Institute.](#project-portfolio-3--python-essentials---code-institute)
+  - [Budget App](#budget-app)
 - [Table of Contents](#table-of-contents)
   - [User Experience](#user-experience)
   - [Site Aims:](#site-aims)
@@ -69,6 +71,8 @@ For the investment we will also explain how long that invested amount will take 
   - print_summary() Creates the table for the budgets created.
   - interest_heading() Creates a table for the interest_calculator as a heading
   - interested_income() Finds a recommended amount to invest from your income after budget.
+  - interest() Finds the calculated interested from interested_income and finds simple interest formula
+  
   - I used Prettytable to create tables throughout my project
   - I used datetime for the interest_calculator to help find out how long it takes to become a millionaire
   - I used Colorama for colour in this project as having a plain text is abit boring
@@ -134,7 +138,10 @@ The site is now live and operational
 
 
 ## Credits
-https://www.myloancare.in/fixed-deposit/simple-interest-formula/#:~:text=The%20formula%20for%20calculating%20Principal,and%20T%20is%20Time%20Period for interest calculator
+For [interest formulas](https://www.myloancare.in/fixed-deposit/simple-interest-formula/#:~:text=The%20formula%20for%20calculating%20Principal,and%20T%20is%20Time%20Period) 
+DK books. [Beginner's step by step coding course]( https://www.amazon.com/Beginners-Step-Step-Coding-Course/dp/1465482210)
+Mentor Ronan Mc
+To Anna Greaves and her [Love Sandwiches - Essentials Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/58d3e90f9a2043908c62f31e51c15deb/)
 
 
 
