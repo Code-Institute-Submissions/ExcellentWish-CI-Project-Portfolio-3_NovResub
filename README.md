@@ -140,7 +140,7 @@ The site is now live and operational
 ## Credits
 For [interest formulas](https://www.myloancare.in/fixed-deposit/simple-interest-formula/#:~:text=The%20formula%20for%20calculating%20Principal,and%20T%20is%20Time%20Period) 
 DK books. [Beginner's step by step coding course]( https://www.amazon.com/Beginners-Step-Step-Coding-Course/dp/1465482210)
-Mentor Ronan Mc
+Mentor Ronan McClelland 
 To Anna Greaves and her [Love Sandwiches - Essentials Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/58d3e90f9a2043908c62f31e51c15deb/)
 
 
