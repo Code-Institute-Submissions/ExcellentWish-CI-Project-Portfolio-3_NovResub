@@ -15,6 +15,7 @@ For the investment we will also explain how long that invested amount will take 
   - [How Is This Will Be Achieved:](#how-is-this-will-be-achieved)
   - [Flowchart](#flowchart)
   - [Tech used](#tech-used)
+    - [Functions and Imports](#functions-and-imports)
   - [Testing](#testing)
   - [Deployment](#deployment)
     - [GitHub](#github)
@@ -47,8 +48,39 @@ For the investment we will also explain how long that invested amount will take 
 
 
 ## Tech used
+- For this project I used Github to save my project.
+- I used Gitpod as my editor for the code. 
+- I used python for the code in the project.
+- I used HeroKu for deployment of this project
+- 
+  ### Functions and Imports
+  - Main() this starts the project in `run.py`
+  - Heading() creates a table that I used for a heading for this project.
+  - I created functions in Income_broken_down to find out differnt values of income throughout the year
+  - week_income_to_fortnight(week_income) Calculates the week income to an income for every 2 weeks
+  - week_income_to_monthly(week_income) Calculates the week income to an income for every 4 weeks
+  - week_income_to_year(week_income) Calculates the week income to an income for every 48 weeks (more information in testing)
+  - Created functions to divide the month to week (more in testing)
+  - Created functions to divide the year to week (more in testing)
+  - Created functions to divide the year to month (more in testing)
+  - userInputBudget() Allows user to input there budgets 
+  - add_budget(name , amount) Creates the budget and adds it to a table 
+  - spend(name, amount) Notes the amount of money you spent and the name of the budget you want to keep track it against
+  - print_summary() Creates the table for the budgets created.
+  - interest_heading() Creates a table for the interest_calculator as a heading
+  - interested_income() Finds a recommended amount to invest from your income after budget.
+  - I used Prettytable to create tables throughout my project
+  - I used datetime for the interest_calculator to help find out how long it takes to become a millionaire
+  - I used Colorama for colour in this project as having a plain text is abit boring
+
+
+
 
 ## Testing
+
+48 weeks instead of 52 as month income *12 did not add to the same value.
+Divide month to week
+divide year to month and week but came across user input issue
 
 
 ## Deployment
@@ -103,6 +135,8 @@ The site is now live and operational
 
 ## Credits
 https://www.myloancare.in/fixed-deposit/simple-interest-formula/#:~:text=The%20formula%20for%20calculating%20Principal,and%20T%20is%20Time%20Period for interest calculator
+
+
 
 Welcome 
 

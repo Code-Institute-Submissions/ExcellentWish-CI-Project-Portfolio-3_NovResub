@@ -6,7 +6,6 @@ import interest_calculator
 
 
 def main():
-    heading()
     confirm_user
     income_broken_down
     budget
