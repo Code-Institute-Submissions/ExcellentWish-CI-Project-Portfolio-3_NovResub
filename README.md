@@ -90,6 +90,9 @@ print(expenditure)
     return print(f"{remaining_from_budget} remaining from budget") in budget.py spend function
 return print(budgets, available)  add_budgets   
 
+bugs 
+left over income is the total taken away . I wanted it to be taken away with each budget to show the user
+
 
 ## Deployment
 ### GitHub 
