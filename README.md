@@ -86,6 +86,9 @@ For the investment we will also explain how long that invested amount will take 
 Divide month to week
 divide year to month and week but came across user input issue
 
+print(f"End of user confirmation user: {user} money: {available}\n")
+print(Fore.WHITE)User confirmation
+
 print(expenditure)
     return print(f"{remaining_from_budget} remaining from budget") in budget.py spend function
 return print(budgets, available)  add_budgets   

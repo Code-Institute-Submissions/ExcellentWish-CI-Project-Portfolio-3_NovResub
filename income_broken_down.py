@@ -76,11 +76,11 @@ def year_income_to_week(year_income):
 year_income_to_week(year_income)
 
 
-def summary():  # Gets a pretty table of summary of your income
+def income_broken_down_summary():  # Gets a pretty table of summary of your income
     x = PrettyTable()
     x.field_names = ["Week", "Fortnight", "Month", "Year"]
     x.add_row([week_income, fortnight_income, month_income, year_income])
     print(x)
 
 print(Fore.CYAN)
-summary()
+income_broken_down_summary()

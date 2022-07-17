@@ -45,9 +45,9 @@ if confirm_user != "y":
         if confirm_user == "y":
             break
 print(Fore.BLUE)
-def summary():  # Gets a pretty table of summary of your user
+def confirm_user_summary():  # Gets a pretty table of summary of your user
     x = PrettyTable()
     x.field_names = ["Your Name", "Your Weekly Income"]
     x.add_row([user, available])
     print(x)
-summary()
+confirm_user_summary()

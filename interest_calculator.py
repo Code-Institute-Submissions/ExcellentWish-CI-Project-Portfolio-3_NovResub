@@ -68,19 +68,38 @@ print("Stocks, bonds, mutual funds and exchange-traded funds can lose value")
 def interest():
     # the amount of money initially invested
     print(Fore.WHITE)
+    global principal
     principal = float(input('Enter the principal for the year: '))
     print("Average rate is 8% a year")
     rate = float(8)
+    global time
     time = float(input('Enter the time in years: '))
-    Simple = (principal * rate * time / 100.00)     # interest formula
+    global simple
+    simple = (principal * rate * time / 100.00)     # interest formula
+    global total_simple
+    total_simple = simple + principal
     print(Fore.MAGENTA)
-    print(f"Simple Interest value over the years. = {Simple}")
+    print(f"Simple Interest value over the years. = {simple}")
     total_amount_invested = 1000000  # set to 1 million
+    global year
     year = (total_amount_invested) / (principal * rate / 100)
     roundedYear = ceil(year)
     current_year = date.today().year
+    global date_year
     date_year = current_year + roundedYear
     print(f"After {year} years your money will be {total_amount_invested}")
     print(f"That is in approximately the year {date_year}")
 
 interest()
+
+def interest_calculator_summary():  # Gets a pretty table of summary of interest
+    x = PrettyTable()
+    x.field_names = ["Principal Invested", "Time Invested", "Value of Interest", "Total"]
+    x.add_row([principal, time, simple, total_simple])
+    print(x)
+    y = PrettyTable()
+    y.field_names = ["Years to be a Millionaire", "Year will be"]
+    y.add_row([year, date_year])
+    print(y)
+
+interest_calculator_summary()
