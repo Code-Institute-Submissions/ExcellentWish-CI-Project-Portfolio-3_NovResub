@@ -20,6 +20,7 @@ def week_income_to_fortnight(week_income):
     fortnight_income = week_income * 2
     return fortnight_income
 
+
 week_income_to_fortnight(week_income)
 
 
@@ -28,6 +29,7 @@ def week_income_to_monthly(week_income):
     global month_income
     month_income = week_income * 4
     return month_income
+
 
 week_income_to_monthly(week_income)
 
@@ -49,6 +51,7 @@ def month_income_to_week(month_income):
     week_income = month_income / 4
     return
 
+
 month_income_to_week(month_income)
 
 
@@ -56,6 +59,7 @@ def month_income_to_year(month_income):
     # Gets the monthly income to your yearly income
     year_income = month_income * 12
     return
+
 
 month_income_to_year(month_income)
 
@@ -65,6 +69,7 @@ def year_income_to_month(year_income):
     month_income = year_income / 12
     return
 
+
 year_income_to_month(year_income)
 
 
@@ -73,10 +78,12 @@ def year_income_to_week(year_income):
     week_income = year_income / 48
     return
 
+
 year_income_to_week(year_income)
 
 
-def income_broken_down_summary():  # Gets a pretty table of summary of your income
+def income_broken_down_summary():
+    # Gets a pretty table of summary of your income
     x = PrettyTable()
     x.field_names = ["Week", "Fortnight", "Month", "Year"]
     x.add_row([week_income, fortnight_income, month_income, year_income])

@@ -20,14 +20,13 @@ For the investment we will also explain how long that invested amount will take 
     - [Functions and Imports](#functions-and-imports)
   - [Testing](#testing)
     - [Validator Testing](#validator-testing)
+    - [Link To Google Doc for testing](#link-to-google-doc-for-testing)
+    - [Bugs and Issues](#bugs-and-issues)
   - [Deployment](#deployment)
     - [GitHub](#github)
     - [Heroku](#heroku)
     - [Make a clone](#make-a-clone)
   - [Credits](#credits)
-  - [Reminders](#reminders)
-  - [Creating the Heroku app](#creating-the-heroku-app)
-  - [Constraints](#constraints)
 
 ## User Experience
 
@@ -83,6 +82,13 @@ For the investment we will also explain how long that invested amount will take 
 
 ## Testing
 Used PEP8 for testing 
+Used print(f"End of user confirmation user: {user} money: {available}\n") in confirm user to test the values.
+Used print(expenditure)
+    return print(f"{remaining_from_budget} remaining from budget") in budget.py spend function
+    and 
+return print(budgets, available)  add_budgets   
+This allowed me to test the values being entered 
+
 
 ### Validator Testing 
 Using PEP8 I came accoss issues in my code.
@@ -134,22 +140,22 @@ And After
 
 ![interest_calculator](assets/images/PEP8-interest_calculator.png)
 
-48 weeks instead of 52 as month income *12 did not add to the same value.
-Divide month to week
-divide year to month and week but came across user input issue
+### Link To Google Doc for testing 
+Google doc for testing 
+[Google-doc](https://docs.google.com/spreadsheets/d/18BBtH5rpuu0lOS5O8NnxxMkAo9nqqgCsV6n0X579aEA/edit#gid=0)
 
-print(f"End of user confirmation user: {user} money: {available}\n")
-print(Fore.WHITE)User confirmation
+and Image
 
-print(expenditure)
-    return print(f"{remaining_from_budget} remaining from budget") in budget.py spend function
-return print(budgets, available)  add_budgets   
+![Google-doc-testing](assets/images/GoogleDocTesting.PNG)
 
-bugs 
-left over income is the total taken away . I wanted it to be taken away with each budget to show the user
-
+### Bugs and Issues
+- I had to use 48 weeks instead of 52. As month income *12 did not add to the same value as week * 52.
+- Eg 200 * 52 = 10400 but 200 * 4 = 800 and 800 * 12 = 9600
+- In budget.py I wanted the left over income  to be taken away each time a new budget was created and print the value before it is taken away.
+  It only prints out the final value after it is taken away.
 
 ## Deployment
+
 ### GitHub 
   - [Login](https://github.com/) to GitHub
   - Click "Repository" and select "New"
@@ -200,39 +206,7 @@ The site is now live and operational
 
 
 ## Credits
-For [interest formulas](https://www.myloancare.in/fixed-deposit/simple-interest-formula/#:~:text=The%20formula%20for%20calculating%20Principal,and%20T%20is%20Time%20Period) 
-DK books. [Beginner's step by step coding course]( https://www.amazon.com/Beginners-Step-Step-Coding-Course/dp/1465482210)
-Mentor Ronan McClelland 
-To Anna Greaves and her [Love Sandwiches - Essentials Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/58d3e90f9a2043908c62f31e51c15deb/)
-
-
-
-Welcome 
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+- For [interest formulas](https://www.myloancare.in/fixed-deposit/simple-interest-formula/#:~:text=The%20formula%20for%20calculating%20Principal,and%20T%20is%20Time%20Period) 
+- DK books. [Beginner's step by step coding course]( https://www.amazon.com/Beginners-Step-Step-Coding-Course/dp/1465482210)
+- Mentor Ronan McClelland 
+- To Anna Greaves and her [Love Sandwiches - Essentials Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/58d3e90f9a2043908c62f31e51c15deb/)

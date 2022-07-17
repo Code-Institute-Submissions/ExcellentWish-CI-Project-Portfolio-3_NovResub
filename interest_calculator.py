@@ -18,6 +18,7 @@ def interest_heading():
     x.add_row(["And also show you how long to become a millionaire"])
     print(x)
 
+
 interest_heading()
 
 
@@ -90,13 +91,19 @@ def interest():
     print(f"After {year} years your money will be {total_amount_invested}")
     print(f"That is in approximately the year {date_year}")
 
+
 interest()
 
-def interest_calculator_summary():  # Gets a pretty table of summary of interest
+
+def interest_calculator_summary():
+    # Gets a pretty table of summary of interest
     x = PrettyTable()
-    x.field_names = ["Principal Invested", "Time Invested", "Value of Interest", "Total"]
+    x.field_names = ["Invested", "Time Invested", "Value of Interest"]
     x.add_row([principal, time, simple, total_simple])
     print(x)
+    z = PrettyTable()
+    z.field_names = ["Total of Investment"]
+    z.add_row([total_simple])
     y = PrettyTable()
     y.field_names = ["Years to be a Millionaire", "Year will be"]
     y.add_row([year, date_year])

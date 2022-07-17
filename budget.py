@@ -64,6 +64,8 @@ def print_summary():
         y.add_row([remaining, left_from_income])
         print(x)
         print(y)
+
+
 print(Fore.WHITE)
 userInputBudget()
 print(Fore.CYAN)
