@@ -21,7 +21,7 @@ available = float(input(Fore.GREEN + "What is your weekly income: "))
 print(Fore.BLUE)
 print(f"Your name is {user} and your income is {available}")
 print(Fore.WHITE)
-confirm_user = input("Is this correct? Please type y or n:0 \n")
+confirm_user = input("Is this correct? Please type y or n: \n")
 """
 This will validate the users input
 """
@@ -45,5 +45,9 @@ if confirm_user != "y":
         if confirm_user == "y":
             break
 print(Fore.BLUE)
-print(f"End of user confirmation user: {user} money: {available}\n")
-print(Fore.WHITE)
+def summary():  # Gets a pretty table of summary of your user
+    x = PrettyTable()
+    x.field_names = ["Your Name", "Your Weekly Income"]
+    x.add_row([user, available])
+    print(x)
+summary()
