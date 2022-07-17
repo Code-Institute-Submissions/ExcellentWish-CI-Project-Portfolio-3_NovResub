@@ -19,6 +19,7 @@ For the investment we will also explain how long that invested amount will take 
   - [Tech used](#tech-used)
     - [Functions and Imports](#functions-and-imports)
   - [Testing](#testing)
+    - [Validator Testing](#validator-testing)
   - [Deployment](#deployment)
     - [GitHub](#github)
     - [Heroku](#heroku)
@@ -81,6 +82,57 @@ For the investment we will also explain how long that invested amount will take 
 
 
 ## Testing
+Used PEP8 for testing 
+
+### Validator Testing 
+Using PEP8 I came accoss issues in my code.
+Here are the before and after
+
+Run.py before
+
+
+![Run.py](assets/images/PEP8-run.py-errors.PNG)
+
+
+And After
+
+![Run.py](assets/images/PEP8-run.png)
+
+Confirm_user.py
+
+
+![Confirm_user.py](assets/images/PEP8-confirm_user-errors.PNG)
+
+And After
+
+
+![Confirm_user.py](assets/images/PEP8-confirm_user.png)
+
+Income_broken_down.py
+
+
+![Income_broken_down.py](assets/images/PEP8-Income-broken-down.pyerrors.PNG)
+
+And After
+
+![Income_broken_down.py](assets/images/PEP8-Income-broken-down.png)
+
+budget.py
+
+
+![Budget.py](assets/images/PEP8-budget-errors.PNG)
+
+And After
+
+![budget](assets/images/PEP8-budget.png)
+
+interst_calculator.py
+
+![interest_calculator](assets/images/PEP8-interest_calculator.py%20errors.PNG)
+
+And After
+
+![interest_calculator](assets/images/PEP8-interest_calculator.png)
 
 48 weeks instead of 52 as month income *12 did not add to the same value.
 Divide month to week
