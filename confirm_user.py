@@ -14,7 +14,9 @@ def heading():
     x.add_row(["And how long to become a millionaire"])
     print(x)
 
+
 heading()
+
 
 while True:
     user = input("Type in your name and press return:\n ")
