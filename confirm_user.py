@@ -19,16 +19,16 @@ heading()
 while True:
     user = input("Type in your name and press return:\n ")
     try:
-       if user == "":
-        raise ValueError('empty string')  
+        if user == "":
+            raise ValueError('empty string')
     except ValueError as e:
         print(e)
         print('Valid name, please')
         continue
     if user == str(user):
-       break
+        break
     else:
-       print('Valid Thank you')               
+        print('Valid Thank you')
 
 while True:
     try:
@@ -40,10 +40,10 @@ while True:
         print('Valid value, please')
         continue
     if available == float():
-       break
+        break
     else:
-       print('Valid Thank you') 
-       break
+        print('Valid Thank you')
+        break
 
 
 print(Fore.BLUE)
