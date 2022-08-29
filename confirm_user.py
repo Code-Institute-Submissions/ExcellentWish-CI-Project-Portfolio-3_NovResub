@@ -70,7 +70,7 @@ if confirm_user != "y":
         user = input("Type in your name and press return:\n ")
         available = float(input("Enter your weekly income:\n"))
         print(Fore.BLUE)
-        print(f"Your name is {user} and your income is{available}")
+        print(f"Your name is {user} and your income is {available}")
         print(Fore.WHITE)
         confirm_user = input("Is this correct? Please type y or n:\n")
         if confirm_user == "y":
