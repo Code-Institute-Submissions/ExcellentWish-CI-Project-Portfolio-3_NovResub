@@ -70,11 +70,36 @@ def interest():
     # the amount of money initially invested
     print(Fore.WHITE)
     global principal
-    principal = float(input('Enter the principal for the year: '))
+    while True:
+        principal = float(input('Enter the principal amount for the year: '))
+        try:
+            if principal == "":
+                raise ValueError('empty value')
+        except ValueError as e:
+            print(e)
+            print('Enter a valid number, please')
+            continue
+        if principal == float():
+            break
+        else:
+            print('Valid Thank you')
+            break
     print("Average rate is 8% a year")
     rate = float(8)
     global time
-    time = float(input('Enter the time in years: '))
+    while True:
+        time = float(input('Enter the time in years: '))
+        try:
+            if time == "":
+                raise ValueError('empty Value')
+        except ValueError as e:
+            print(e)
+            print('Enter a valid value, please')
+            continue
+        if time == float():
+            break
+        else:
+            break
     global simple
     simple = (principal * rate * time / 100.00)     # interest formula
     global total_simple
