@@ -43,6 +43,7 @@ def week_income_to_year(week_income):
     year_income = week_income * 48
     return year_income
 
+
 week_income_to_year(week_income)
 
 
@@ -88,6 +89,7 @@ def income_broken_down_summary():
     x.field_names = ["Week", "Fortnight", "Month", "Year"]
     x.add_row([week_income, fortnight_income, month_income, year_income])
     print(x)
+
 
 print(Fore.CYAN)
 income_broken_down_summary()

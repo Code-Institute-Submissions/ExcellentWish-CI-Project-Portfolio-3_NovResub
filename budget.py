@@ -23,7 +23,6 @@ def userInputBudget():
             except ValueError as e:
                 print(e)
                 print('Enter a valid number, please')
-                
             if budgetAmount == float():
                 break
             else:
@@ -67,7 +66,6 @@ def print_summary():
         remaining = budgeted - spent
         global left_from_income
         left_from_income = available
-
         # use pretty tables for print summary
         x = PrettyTable()
         y = PrettyTable()
