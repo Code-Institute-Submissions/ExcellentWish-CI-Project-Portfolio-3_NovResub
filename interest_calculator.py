@@ -123,7 +123,7 @@ interest()
 def interest_calculator_summary():
     # Gets a pretty table of summary of interest
     x = PrettyTable()
-    x.field_names = ["Invested", "Time Invested", "Value of Interest"]
+    x.field_names = ["Invested", "Time Invested", "Value of Interest", "Total Value"]
     x.add_row([principal, time, simple, total_simple])
     print(x)
     z = PrettyTable()
@@ -133,5 +133,3 @@ def interest_calculator_summary():
     y.field_names = ["Years to be a Millionaire", "Year will be"]
     y.add_row([year, date_year])
     print(y)
-
-interest_calculator_summary()
