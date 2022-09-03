@@ -11,21 +11,13 @@ expenditure = {}
 
 def userInputBudget():
     print(Fore.WHITE)
-    while True:
-        budget_num = int(input(
-            "Enter the number of budgets you want to record: "
-            ))
+    valid = False
+    while not valid:
         try:
-            if budget_num == str():
-                raise ValueError('Sorry numbers only.')
-        except ValueError as e:
-            print(e)
-            print('Enter a valid number, please')
-        if budget_num == float():
-            break
-        else:
-            print('Valid Thank you')
-            break
+            budget_num = int(input("Enter the number of budgets you want to record: "))
+            valid = True  
+        except ValueError:
+            print('Enter a valid number, please')   
     while budget_num > 0:
         budget_num -= 1
         budgetname = str(input('Enter the budget name: '))
