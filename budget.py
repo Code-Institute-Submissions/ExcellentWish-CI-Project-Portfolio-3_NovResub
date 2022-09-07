@@ -21,22 +21,24 @@ def userInputBudget():
     while budget_num > 0:
         budget_num -= 1
         budgetname = str(input('Enter the budget name: '))
-        while True:
+    correct = False
+    while not correct:
+        try:
             budgetAmount = float(input('Enter the amount for this budget:'))
-            try:
-                if budgetAmount == "":
-                    raise ValueError('empty string')
-            except ValueError as e:
-                print(e)
-                print('Enter a valid number, please')
-            if budgetAmount == float():
-                break
-            else:
-                print('Valid Thank you')
-                break
-        spendings = float(input('Enter the amount you have spent: '))
-        add_budget(budgetname, budgetAmount)
-        spend(budgetname, spendings)
+            correct = True
+        except ValueError as e:
+            print(e)
+            print('Enter a valid number, please')
+    correct_spending = False
+    while not correct_spending:
+        try:
+            spendings = float(input('Enter the amount you have spent: '))
+            correct_spending = True
+        except ValueError as e:
+            print(e)
+            print('Enter a valid number, please')    
+    add_budget(budgetname, budgetAmount)
+    spend(budgetname, spendings)
 
 
 def add_budget(name, amount):
