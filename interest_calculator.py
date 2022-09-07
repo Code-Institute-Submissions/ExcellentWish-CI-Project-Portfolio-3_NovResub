@@ -73,7 +73,9 @@ def interest():
     principal_amount = False
     while not principal_amount:
         try:
-            principal = float(input('Enter the principal amount for the year: '))
+            principal = float(input(
+                'Enter the principal amount for the year: '
+                ))
             principal_amount = True
         except ValueError as e:
             print(e)
