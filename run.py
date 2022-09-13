@@ -1,3 +1,5 @@
+import os
+import sys
 import confirm_user
 import income_broken_down
 import budget
@@ -14,3 +16,12 @@ def main():
 
 
 main()
+
+restart = input("\nDo you want to restart the program? [y/n] > ")
+
+if restart == "y":
+    os.execl(sys.executable, os.path.abspath(__file__), *sys.argv) 
+else:
+    print("\nThe program will be closed...")
+    print("\nThank you and goodbye!")
+    sys.exit(0)
