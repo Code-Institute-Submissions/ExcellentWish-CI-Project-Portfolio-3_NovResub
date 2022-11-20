@@ -14,25 +14,21 @@ def userInputBudget():
     valid = False
     while not valid:
         try:
-            budget_num = int(input(
-                "Enter the number of budgets you want to record: "))
-            while budget_num > 0:
-                budget_num -= 1
-                budgetname = str(input('Enter the budget name: '))
-                try:
-                    budgetAmount = float(input(
-                        'Enter the amount for this budget:'))
-                    valid = True
-                except ValueError as e:
-                    print(e)
-                    print('Enter a valid number, please')
-                try:
-                    spendings = float(input(
-                        'Enter the amount you have spent: '))
-                    valid = True
-                except ValueError as e:
-                    print(e)
-                    print('Enter a valid number, please')
+            budgetname = str(input('Enter the budget name: '))
+            try:
+                budgetAmount = float(input(
+                    'Enter the amount for this budget:'))
+                valid = True
+            except ValueError as e:
+                print(e)
+                print('Enter a valid number, please')
+            try:
+                spendings = float(input(
+                    'Enter the amount you have spent: '))
+                valid = True
+            except ValueError as e:
+                print(e)
+                print('Enter a valid number, please')
         except ValueError:
             print('Enter a valid number, please')
     add_budget(budgetname, budgetAmount)
