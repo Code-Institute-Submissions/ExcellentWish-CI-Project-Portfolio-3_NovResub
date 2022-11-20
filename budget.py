@@ -15,29 +15,25 @@ def userInputBudget():
     while not valid:
         try:
             budget_num = int(input(
-                "Enter the number of budgets you want to record: "
-                ))
-            valid = True
+                "Enter the number of budgets you want to record: "))
+            while budget_num > 0:
+                budget_num -= 1
+                budgetname = str(input('Enter the budget name: '))
+                try:
+                    budgetAmount = float(input(
+                        'Enter the amount for this budget:'))
+                    valid = True
+                except ValueError as e:
+                    print(e)
+                    print('Enter a valid number, please')
+                try:
+                    spendings = float(input(
+                        'Enter the amount you have spent: '))
+                    valid = True
+                except ValueError as e:
+                    print(e)
+                    print('Enter a valid number, please')
         except ValueError:
-            print('Enter a valid number, please')
-    while budget_num > 0:
-        budget_num -= 1
-        budgetname = str(input('Enter the budget name: '))
-    correct = False
-    while not correct:
-        try:
-            budgetAmount = float(input('Enter the amount for this budget:'))
-            correct = True
-        except ValueError as e:
-            print(e)
-            print('Enter a valid number, please')
-    correct_spending = False
-    while not correct_spending:
-        try:
-            spendings = float(input('Enter the amount you have spent: '))
-            correct_spending = True
-        except ValueError as e:
-            print(e)
             print('Enter a valid number, please')
     add_budget(budgetname, budgetAmount)
     spend(budgetname, spendings)
@@ -65,7 +61,6 @@ def spend(name, amount):
     expenditure[name] += amount
     budgeted = budgets[name]
     spent = expenditure[name]
-    remaining_from_budget = budgeted - spent
     return
 
 
@@ -79,12 +74,16 @@ def print_summary():
         # use pretty tables for print summary
         x = PrettyTable()
         y = PrettyTable()
+        z = PrettyTable()
         x.field_names = ["Budget Name", "Budgeted Amount", "Spent"]
         x.add_row([name, budgeted, spent])
         y.field_names = ["Remainder from Budget", "Left from Income"]
         y.add_row([remaining, left_from_income])
+        z.field_names = ["Remaining"]
+        z.add_row([(remaining + left_from_income)])
         print(x)
         print(y)
+        print(z)
 
 
 print(Fore.WHITE)
